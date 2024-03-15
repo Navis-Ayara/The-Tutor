@@ -1,0 +1,64 @@
+import flet as ft
+
+def profile(page: ft.Page):
+    return ft.Container(
+        padding=10,
+        content=ft.Column([
+            ft.Container(
+                padding=10,
+                border_radius=14,
+                bgcolor=ft.colors.SURFACE_VARIANT,
+                content=ft.Row([
+                    ft.Image(
+                        src="icons/Bookmark.svg",
+                        color=ft.colors.ON_BACKGROUND
+                    ),
+                    ft.Text(
+                        value="Selected Subjects"
+                    )
+                ])
+            ),
+            ft.Container(
+                padding=10,
+                border_radius=14,
+                bgcolor=ft.colors.SURFACE_VARIANT,
+                content=ft.Row([
+                    ft.Image(
+                        src="icons/Edit.svg",
+                        color=ft.colors.ON_BACKGROUND
+                    ),
+                    ft.Text(
+                        value="Account"
+                    )
+                ])
+            ),
+            ft.Container(
+                padding=10,
+                border_radius=14,
+                bgcolor=ft.colors.SURFACE_VARIANT,
+                content=ft.Row([
+                    ft.Image(
+                        src="icons/Settings.svg",
+                        color=ft.colors.ON_BACKGROUND
+                    ),
+                    ft.Text(
+                        value="Settings"
+                    )
+                ])
+            ),
+            ft.Container(
+                padding=10,
+                border_radius=14,
+                bgcolor=ft.colors.SURFACE_VARIANT,
+                content=ft.Row([
+                    ft.Image(
+                        src="icons/Info.svg",
+                        color=ft.colors.ON_BACKGROUND
+                    ),
+                    ft.Text(
+                        value="About"
+                    )
+                ])
+            )
+        ])
+    )
